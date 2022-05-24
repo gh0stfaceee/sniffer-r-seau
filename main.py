@@ -1,6 +1,6 @@
 import socket, os
-from src.pcap import *
-from src.frame import *
+from pcap import *
+from frame import *
 
 def main():
     conn = socket.socket(socket.AF_PACKET, socket.SOCK_RAW, socket.ntohs(3))
