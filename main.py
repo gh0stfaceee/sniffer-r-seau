@@ -1,12 +1,12 @@
 import socket, os
-from pcap import *
-from frame import *
+from src.pcap import *
+from src.frame import *
 
 def main():
     conn = socket.socket(socket.AF_PACKET, socket.SOCK_RAW, socket.ntohs(3))
     pcap,name_file = Create_pcapfile()
     cpt = 1
-    print("Appuyez sur Ctrl+C poru arretez la capture... ")
+    print("Appuyez sur Ctrl+C pour arretez la capture... ")
     time.sleep(1)
     try:
         while True:
