@@ -209,7 +209,7 @@ class Trame:
 
     def Protocol_Analyze(self, Port):
         script_dir = os.path.dirname(__file__)
-        List = open(f"{script_dir}/List_Port.txt", "r")
+        List = open(f"{script_dir}/port.txt", "r")
         for line in List:
             index = line.index(" ")
             if(int(line[0:index]) == Port):
