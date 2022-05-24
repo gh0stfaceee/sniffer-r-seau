@@ -1,6 +1,6 @@
 from struct import pack
 import time
-from src.frame import *
+from frame import *
 
 class PCAPFile:
     def __init__(self,filename):
